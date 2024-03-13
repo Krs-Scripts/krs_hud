@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body{
+  font-family: "Rubik", sans-serif;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.contenitore{
+   
+  flex-direction: column;
+  height: 25vh;
+  width: 14vw;
+  margin-left: 160vh;
+  margin-top: 17vh;
+
+}
+
+.logo {
+    width: 130px; 
+    height: 130px; 
+    position: absolute; 
+    top: 5vh; 
+    margin-left: 0.2vh;
+  }
+
+
+  .contenitore_generale {
+    position: absolute;
+    bottom: 0;
+    height: 3vw;
+    width: 50%;
+    left: 0;
+    display: flex;
+    margin-left: 1.5vw;
+    bottom: 1.5%;
+  }
+
+  .contenitore_cerchi {
+    position: relative;
+    height: 100%;
+    width: 3vw;
+    border-radius: 50%;
+    background-color: #2e2e2f;
+    margin-right: 0.9vw;
+  }
+
+  /* .contenitore_cinema {
+    width: 1920px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute; 
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+  .parte_alta {
+    width: 1920px;
+    height: 250px;
+    margin: 0 auto;
+    position: absolute; 
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2e2e2f;
+}
+
+  .parte_bassa {
+    width: 1920px;
+    height: 250px;
+    margin: 0 auto;
+    position: absolute; 
+    top: 470%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2e2e2f;
+}
+
+
+  .contenitore_interfaccia {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2e2e2f;
+    border-radius: 0.9vh;
+}
+
+  .pulsanti-container {
+    position: absolute;
+    bottom: 0.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; 
+    gap: 1vw; 
+  }
+
+  .pulsanti {
+    width: 5vw;
+    border-radius: 0.9vh;
+    border: none;
+    background-color: #1864AB;
+    height: 4vh;
+    cursor: pointer;
+    font-size: 1.5vh;
+    font-weight: bolder;
+    color: rgba(248, 248, 248, 0.904);
+
+  }
+
+  .pulsanti:hover {
+    color: white;
+  } */
+
+
+  #id {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(176, 255, 73);
+    font-weight: 500;
+    font-size: 1.3vw;
+  }
+  
+
+  #health, #thirst, #hunger, #oxygen, #stamina, #armour, #voice{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  i {
+    position: absolute;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.712);
+
+  }
+
+/* 
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+██ ▄▄▀██ ▄▄▄ ██ ▄▄▄ ████ ███ ██ ▄▄▄██ ██ █▄ ▄██ ▄▄▀██ █████ ▄▄▄
+██ █████▄▄▄▀▀██▄▄▄▀▀█████ █ ███ ▄▄▄██ ▄▄ ██ ███ █████ █████ ▄▄▄
+██ ▀▀▄██ ▀▀▀ ██ ▀▀▀ █████▄▀▄███ ▀▀▀██ ██ █▀ ▀██ ▀▀▄██ ▀▀ ██ ▀▀▀
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ */
+@keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes hide {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      background-color: transparent;
+    }
+  }
+  
+  @keyframes gear {
+    0% {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+  }
+
+
+  .contenitore_speed {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    bottom: 2%;
+    right: 4%;
+    font-size: 75px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.712);
+    height: 100px;
+    width: 200px;
+    animation: show 500ms forwards;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .speed {
+    transition: color 350ms ease;
+  }
+  
+  .misura {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #cacaca;
+    text-transform: uppercase;
+  }
+  
+  .hidden {
+    animation: hide 500ms forwards !important;
+  }
+  
+  .speedPart {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
+  .rpmPart {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .rpm {
+    width: 100%;
+    height: 10px;
+    background: #F8F9FA;
+    border-radius: 0.9vh;
+    transition: all 450ms ease;
+  }
+  
+  .gear {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-size: 24px;
+    color: white;
+    animation: gear 1.4s forwards;
+  }
+
+  .contenitore_benzina {
+    width: 100%;
+    height: 10px;
+    background: #2f2f303a;
+    margin-top: 0.5vh;
+    border-radius: 0.9vh;
+    transition: all 450ms ease;
+  }
+  
+  .livello_benzina {
+    width: 100%;
+    height: 10px;
+    border-radius: 0.9vh;
+    transition: all 450ms ease;
+  }
+
+  .icona_fuel {
+
+    position: absolute;
+    right: 10px;
+    top: 9.3vh;
+    left: -2vh;
+    font-size: 14px;
+    color: white;
+
+  }
+
+  .icona_cintura {
+
+    position: absolute;
+    right: 10px;
+    top: 5.5vh;
+    left: -2vh;
+    font-size: 16px;
+    color: white;
+
+  }
