@@ -1,0 +1,20 @@
+body {
+  user-select: none;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  left: 1%; 
+  bottom: 0.1%; 
+  transform: translateY(0); 
+  gap: 8px; 
+  width: auto;
+  max-height: 60%;
+  opacity: 1;
+  transition: none;
+}
