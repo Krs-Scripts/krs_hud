@@ -1,5 +1,8 @@
 **Krs Hud**
 
+*Command installation module:*
+- npm i
+
 *Dependencies:*
 - ox_lib
 
