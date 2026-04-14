@@ -1,0 +1,25 @@
+/* @import url("https://use.typekit.net/wxh5ury.css"); */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+
+html {
+  color-scheme: normal !important;
+}
+
+body {
+  background: none !important;
+  margin: 0;
+  font-family: roboto-mono;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  user-select: none;
+  overflow: hidden !important;
+}
+
+p {
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
