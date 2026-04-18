@@ -136,8 +136,6 @@ This script uses **ox_lib versionCheck** to notify users when a new version is a
 ## 👑 Author
 
 **Krs Scripts**
-https://github.com/Krs-Scripts
-
 ---
 
 ## 💡 Notes
